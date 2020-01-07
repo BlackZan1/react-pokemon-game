@@ -17,9 +17,9 @@
                 "fps": 7
             },
             "sprites": [
-                "/img/hero/pikachu/move.png",
-                "/img/hero/pikachu/main.png",
-                "/img/hero/pikachu/attack.png"
+                "/react-pokemon-game/img/hero/pikachu/move.png",
+                "/react-pokemon-game/img/hero/pikachu/main.png",
+                "/react-pokemon-game/img/hero/pikachu/attack.png"
             ],
             "name": "Pikachu",
             "classList": ["hero--pikachu moving", "hero--pikachu", "hero--pikachu"]
@@ -41,8 +41,8 @@
                 "fps": 7
             },
             "sprites": [
-                "/img/hero/charmander/move.png",
-                "/img/hero/charmander/main.png"
+                "/react-pokemon-game/img/hero/charmander/move.png",
+                "/react-pokemon-game/img/hero/charmander/main.png"
             ],
             "name": "Charmander",
             "classList": ["hero--charmander moving", "hero--charmander", "hero--charmander"]
@@ -64,8 +64,8 @@
                 "fps": 2
             },
             "sprites": [
-                "/img/hero/sans/move.png",
-                "/img/hero/sans/main.png"
+                "/react-pokemon-game/img/hero/sans/move.png",
+                "/react-pokemon-game/img/hero/sans/main.png"
             ],
             "name": "Sans",
             "classList": ["hero--sans moving", "hero--sans", "hero--sans"]
@@ -87,8 +87,8 @@
                 "fps": 7
             },
             "sprites": [
-                "/img/hero/flareon/move.png",
-                "/img/hero/flareon/main.png"
+                "/react-pokemon-game/img/hero/flareon/move.png",
+                "/react-pokemon-game/img/hero/flareon/main.png"
             ],
             "name": "Flareon",
             "classList": ["hero--flareon moving", "hero--flareon", "hero--flareon"]
@@ -110,8 +110,8 @@
                 "fps": 6
             },
             "sprites": [
-                "/img/hero/mew/move.png",
-                "/img/hero/mew/main.png"
+                "/react-pokemon-game/img/hero/mew/move.png",
+                "/react-pokemon-game/img/hero/mew/main.png"
             ],
             "name": "Mew",
             "classList": ["hero--mew moving", "hero--mew", "hero--mew"]
@@ -133,8 +133,8 @@
                 "fps": 7
             },
             "sprites": [
-                "/img/hero/psyduck/move.png",
-                "/img/hero/psyduck/main.png"
+                "/react-pokemon-game/img/hero/psyduck/move.png",
+                "/react-pokemon-game/img/hero/psyduck/main.png"
             ],
             "name": "Psyduck",
             "classList": ["hero--psyduck moving", "hero--psyduck", "hero--psyduck"]
