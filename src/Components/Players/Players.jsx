@@ -15,7 +15,7 @@ export default ({choosePlayer}) => {
 
     useEffect(() => {
         if(!items.length) {
-            Axios.get('/heroData.json')
+            Axios.get('/react-pokemon-game/heroData.json')
             .then(res => res.data.heroData)
             .then(res => {
                 setItems([
