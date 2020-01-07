@@ -1,0 +1,27 @@
+.Sky {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: 999;
+}
+
+.Cloud {
+    position: absolute;
+    animation-name: fly;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0.9;
+}
+
+@keyframes fly {
+    0% {
+        left: -500px;
+    }
+    99% {
+        left: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}

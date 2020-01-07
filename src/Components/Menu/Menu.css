@@ -1,0 +1,116 @@
+.Menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.Logo, .Menu-nav {
+    animation: fadeIn 1s ease;
+}
+
+.Logo {
+    margin: 80px auto 120px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.Logo h1 {
+    font-size: 80px;
+    background: url('https://ak7.picdn.net/shutterstock/videos/1023423877/thumb/1.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Press Start 2P';
+}
+
+.Logo h2 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Press Start 2P';
+}
+
+.Menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu-nav button {
+    margin: 0px 0px 30px;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+    transition: all .4s ease;
+}
+
+.Menu-nav button::after {
+    content: '';
+    display: none;
+    background: dodgerblue;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    transform: translate3d(100%, 100%);
+}
+
+.Menu-nav button:hover {
+    border: 3px solid #fff;
+}
+
+.Menu-git {
+    margin: 250px 0px 0px;
+}
+
+.Menu-git a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-weight: 600;
+}
+
+.Menu-git a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* @keyframes topBubbles {
+    0%{
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+      50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
+   100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+}
+  
+  @keyframes bottomBubbles {
+    0%{
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+   100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+} */

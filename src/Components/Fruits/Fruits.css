@@ -1,0 +1,5 @@
+.fruit {
+    position: absolute;
+    transition: all .6s linear;
+    z-index: 99999999999999999; /* WOW!!! */
+}

@@ -1,0 +1,112 @@
+.hero--pikachu {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+    overflow: hidden;
+}
+
+.hero--pikachu.moving {
+    width: 92px;
+    height: 72px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
+
+.hero--charmander {
+    width: 82px;
+    height: 80px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
+
+.hero--charmander.moving {
+    width: 80px;
+    height: 82px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
+
+.hero--sans {
+    height: 96px;
+    width: 84px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+    overflow: hidden;
+}
+
+.hero--sans.moving {
+    width: 66.75px;
+    height: 96px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
+
+.hero--flareon {
+    width: 86px;
+    height: 84px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+    overflow: hidden;
+}
+
+.hero--flareon.moving {
+    width: 86px;
+    height: 88px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
+
+.hero--mew {
+    width: 96px;
+    height: 100px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+    overflow: hidden;
+}
+
+.hero--mew.moving {
+    width: 142px;
+    height: 106px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
+
+.hero--psyduck {
+    width: 64px;
+    height: 94px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+    overflow: hidden;
+}
+
+.hero--psyduck.moving {
+    width: 66px;
+    height: 94px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 9999;
+    transition: left .4s ease-out;
+}
