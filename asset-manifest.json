@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-pokemon-game/static/css/main.af9c3959.chunk.css",
+    "main.js": "/react-pokemon-game/static/js/main.76a35ae0.chunk.js",
+    "main.js.map": "/react-pokemon-game/static/js/main.76a35ae0.chunk.js.map",
+    "runtime-main.js": "/react-pokemon-game/static/js/runtime-main.d3e290f5.js",
+    "runtime-main.js.map": "/react-pokemon-game/static/js/runtime-main.d3e290f5.js.map",
+    "static/js/2.247095c0.chunk.js": "/react-pokemon-game/static/js/2.247095c0.chunk.js",
+    "static/js/2.247095c0.chunk.js.map": "/react-pokemon-game/static/js/2.247095c0.chunk.js.map",
+    "index.html": "/react-pokemon-game/index.html",
+    "precache-manifest.f2e345d1d2b9d19ad0e151eebb3f0142.js": "/react-pokemon-game/precache-manifest.f2e345d1d2b9d19ad0e151eebb3f0142.js",
+    "service-worker.js": "/react-pokemon-game/service-worker.js",
+    "static/css/main.af9c3959.chunk.css.map": "/react-pokemon-game/static/css/main.af9c3959.chunk.css.map",
+    "static/media/bg.mp3": "/react-pokemon-game/static/media/bg.0859692a.mp3",
+    "static/media/cloud.png": "/react-pokemon-game/static/media/cloud.35e5ff56.png",
+    "static/media/eat.mp3": "/react-pokemon-game/static/media/eat.331a52f8.mp3",
+    "static/media/menu.mp3": "/react-pokemon-game/static/media/menu.9a44f820.mp3",
+    "static/media/tree.png": "/react-pokemon-game/static/media/tree.7d46eadb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3e290f5.js",
+    "static/js/2.247095c0.chunk.js",
+    "static/css/main.af9c3959.chunk.css",
+    "static/js/main.76a35ae0.chunk.js"
+  ]
+}
