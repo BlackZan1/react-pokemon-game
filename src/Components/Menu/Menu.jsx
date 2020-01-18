@@ -32,6 +32,10 @@ export default (props) => {
         }, 19000)
     }, [natureMode])
 
+    const changeChooseMode = () => {
+        setChooseMode(!chooseMode)
+    }
+
     return <>
         <div className='Menu' style={natureMode ? style.nature : null}>
             <div className='Logo'>
@@ -40,7 +44,7 @@ export default (props) => {
             </div>
 
             <div className='Menu-nav'>
-                <button style={natureMode ? {color: '#000'} : {color: '#fff'}} onClick={() => setChooseMode(true)}>Play</button>
+                <button style={natureMode ? {color: '#000'} : {color: '#fff'}} onClick={() => changeChooseMode()}>Play</button>
                 <button style={natureMode ? {color: '#000'} : {color: '#fff'}}>Settings</button>
             </div>
 
@@ -48,16 +52,15 @@ export default (props) => {
                 <a rel="noopener noreferrer" style={natureMode ? {color: '#000', borderColor: '#000'} : {color: '#fff'}} target='_blank' href="https://github.com/BlackZan1?tab=repositories">Go to see author's repositories</a>
             </div>
 
-            {/* <div className='Menu-footer'>
-                <h2>Big thanks to JoshR691</h2>
-                <h2>Good sprites from good man</h2>
-            </div> */}
-
             {natureMode && <Fruits appWidth={WIDTH} appHeight={HEIGHT} />}
         </div>
 
-        {!natureMode && <div style={style.modal}></div>}
+        {
+            !natureMode && <div style={style.modal}></div>
+        }
 
-        {chooseMode && <Players {...props} /> }
+        {   
+            chooseMode && <Players {...props} changeChooseMode={changeChooseMode} /> 
+        }
     </>
 }

@@ -4,7 +4,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }
 
 .hero--charmander {
@@ -23,7 +23,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }
 
 .hero--charmander.moving {
@@ -32,7 +32,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }
 
 .hero--sans {
@@ -41,7 +41,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
     overflow: hidden;
 }
 
@@ -51,7 +51,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }
 
 .hero--flareon {
@@ -60,7 +60,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
     overflow: hidden;
 }
 
@@ -70,7 +70,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }
 
 .hero--mew {
@@ -79,7 +79,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
     overflow: hidden;
 }
 
@@ -89,7 +89,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }
 
 .hero--psyduck {
@@ -98,7 +98,7 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
     overflow: hidden;
 }
 
@@ -108,5 +108,5 @@
     position: absolute;
     bottom: 65px;
     z-index: 9999;
-    transition: left .4s ease-out;
+    transition: left .4s linear;
 }

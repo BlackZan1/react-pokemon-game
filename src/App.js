@@ -11,6 +11,7 @@ import MenuBg from './audio/menu.mp3';
 // static
 import groundImg from './img/bg-bottom.png';
 import './App.css';
+import PlayerScore from './Components/PlayerScore/PlayerScore.jsx';
 
 const appWidth = 1500, appHeight = 700;
 
@@ -135,7 +136,9 @@ class App extends React.Component {
   }
 
   checkCollideWithFruit() {
-    this.fruits = [...document.querySelectorAll('#fruit')];
+    if(!this.fruits.length) {
+      this.fruits = [...document.querySelectorAll('#fruit')];
+    }
     
     setInterval(() => {
       this.fruits.forEach((item, index) => {
@@ -156,10 +159,13 @@ class App extends React.Component {
             }))
 
             item.style.bottom = appHeight + 'px';
-
             new Audio(EatAudio).play();
 
-            return;
+            setTimeout(() => {
+              item.parentNode.removeChild(item); 
+            }, 1000)
+
+            return
         }
 
         if(Math.abs(secondXDiv) <= 65 &&
@@ -174,10 +180,13 @@ class App extends React.Component {
               }))
 
             item.style.bottom = appHeight + 'px';
-
             new Audio(EatAudio).play();
+            
+            setTimeout(() => {
+              item.parentNode.removeChild(item); 
+            }, 1000)
 
-            return;
+            return
         }
       })
     }, 650)
@@ -250,8 +259,8 @@ class App extends React.Component {
 
             {gameMode && 
               <>
-                <h3 className='fs'>First player {this.state.score.firstPlayer}</h3>
-                <h3 className='ss'>Second player {this.state.score.secondPlayer}</h3>
+                <PlayerScore title={'First Player'} score={score.firstPlayer} />
+                <PlayerScore title={'Second Player'} score={score.secondPlayer} />
               </>
             }
         </div>

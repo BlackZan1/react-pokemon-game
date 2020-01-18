@@ -3,7 +3,7 @@ import Animator from 'react-sprite-animator';
 import Axios from 'axios';
 import './Players.css';
 
-export default ({choosePlayer}) => {
+export default ({choosePlayer, changeChooseMode}) => {
     let [items, setItems] = React.useState([]);
     let [playersData, setPlayersData] = React.useState({
         player: 'first',
@@ -15,7 +15,8 @@ export default ({choosePlayer}) => {
 
     useEffect(() => {
         if(!items.length) {
-            Axios.get('/react-pokemon-game/heroData.json')
+            Axios.get('/react-pokemon-game/heroData.json') 
+            // Axios.get('/heroData2.json') // for testing
             .then(res => res.data.heroData)
             .then(res => {
                 setItems([
@@ -81,6 +82,10 @@ export default ({choosePlayer}) => {
                     {
                         items.length && showPlayers
                     }
+                </div>
+            
+                <div className='Menu-close-btn' onClick={() => changeChooseMode()}>
+                    <img src={'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png'} alt="X"/>
                 </div>
             </div>
         </div>

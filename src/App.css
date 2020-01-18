@@ -11,22 +11,6 @@ button {
   animation: fadeIn 1s ease;
 }
 
-.fs {
-  position: absolute;
-  top: 200px;
-  left: 100px;
-  font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  animation: fadeInLeft 1s ease-in-out;
-}
-
-.ss {
-  position: absolute;
-  top: 200px;
-  right: 100px;
-  font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  animation: fadeInRight 1s ease-in-out;
-}
-
 .App-big-title {
   width: 90%;
   position: absolute;
@@ -57,17 +41,44 @@ button {
   margin: 0px 0px 30px;
   width: 200px;
   height: 50px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   border: 2px solid #dcdcdc;
   border-radius: 12px;
   font-size: 18px;
   font-family: 'Press Start 2P';
   cursor: pointer;
-  transition: all 1s ease;
+  transition: all .4s ease;
+  animation: fadeIn 1s ease;
 }
 
 .App-replay button:hover {
   border: 3px solid #dcdcdc;
+}
+
+.player-score {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  width: 200px;
+  font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.player-score.right {
+  border-radius: 10px 0px 0px 10px;
+  top: 200px;
+  right: 0;
+  animation: fadeInRight .4s ease;
+}
+
+.player-score.left {
+  border-radius: 0px 10px 10px 0px;
+  top: 200px;
+  left: 0;
+  animation: fadeInLeft .4s ease;
 }
 
 @keyframes fadeTitle {

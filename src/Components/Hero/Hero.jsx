@@ -2,6 +2,8 @@ import React from 'react';
 import Animator from 'react-sprite-animator';
 import './Hero.css';
 
+const SPEED = 100; //IN PIXELS
+
 export default class Hero extends React.PureComponent {
     state = {
         firstPlayer: {...this.props.dataPlayers.firstPlayer},
@@ -10,22 +12,19 @@ export default class Hero extends React.PureComponent {
 
     componentDidMount() {
         // event listener - i love it so much
-        // i think games can't work without this event listener function
+        // i think any games can't work without this event listener function
         document.addEventListener('keyup', (ev) => this.heroDirection(ev));
+        // document.addEventListener('keyup', (ev) => this.stopHeroDirection(ev));
     }
 
     componentDidUpdate(prevProps, prevState) {
         if(this.state.firstPlayer.x !== prevProps.dataPlayers.firstPlayer.x) {
             let {firstPlayer, secondPlayer} = this.state;
 
-            console.log('render')
-
             this.props.changeDataPlayer({firstPlayer, secondPlayer})
         }
         if(this.state.secondPlayer.x !== prevProps.dataPlayers.secondPlayer.x) {
             let {firstPlayer, secondPlayer} = this.state;
-
-            console.log('render')
 
             this.props.changeDataPlayer({firstPlayer, secondPlayer})
         }
@@ -65,7 +64,7 @@ export default class Hero extends React.PureComponent {
                 return {
                     firstPlayer: {
                         ...prevState.firstPlayer,
-                        x: this.borderLimitedX(prevState.firstPlayer.x + 100),
+                        x: this.borderLimitedX(prevState.firstPlayer.x + SPEED),
                         RightSide: true,
                         moving: true,
                     },
@@ -88,7 +87,7 @@ export default class Hero extends React.PureComponent {
                 return {
                     firstPlayer: {
                         ...prevState.firstPlayer,
-                        x: this.borderLimitedX(prevState.firstPlayer.x - 100),
+                        x: this.borderLimitedX(prevState.firstPlayer.x - SPEED),
                         RightSide: false,
                         moving: true,
                     }
@@ -135,7 +134,7 @@ export default class Hero extends React.PureComponent {
                 return {
                     secondPlayer: {
                         ...prevState.secondPlayer,
-                        x: this.borderLimitedX(prevState.secondPlayer.x - 100),
+                        x: this.borderLimitedX(prevState.secondPlayer.x - SPEED),
                         RightSide: false,
                         moving: true
                     },
@@ -157,7 +156,7 @@ export default class Hero extends React.PureComponent {
                 return {
                     secondPlayer: {
                         ...prevState.secondPlayer,
-                        x: this.borderLimitedX(prevState.secondPlayer.x + 100),
+                        x: this.borderLimitedX(prevState.secondPlayer.x + SPEED),
                         RightSide: true,
                         moving: true
                     },

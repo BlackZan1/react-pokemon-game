@@ -50,7 +50,7 @@ export default class Ground extends React.PureComponent {
 
         return <div className='Ground' style={{background: `url(${this.props.image})`, width: this.props.appWidth, height: 80, position: 'absolute', bottom: 0, zIndex: 999}}>
             {
-                this.state.plants.map(plant => {
+                this.state.plants.map((plant, index) => {
                     switch(plant.type) {
                         case 'bush':
                             plant.image = BushImg;
@@ -62,7 +62,7 @@ export default class Ground extends React.PureComponent {
                             plant.image = BushImg;
                     }
 
-                    return <img src={plant.image} alt="Loading..." style={{position: "absolute", bottom: plant.y, left: plant.x, width: plant.width, zIndex: plant.zIndex, filter: 'drop-shadow(0px 0px 2px #323232)'}}/>
+                    return <img key={index} src={plant.image} alt="Loading..." style={{position: "absolute", bottom: plant.y, left: plant.x, width: plant.width, zIndex: plant.zIndex, filter: 'drop-shadow(0px 0px 2px #323232)'}}/>
                 })
             }
         </div>
